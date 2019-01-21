@@ -1,6 +1,8 @@
 package com.example.petclinicdata.model;
 
-public class Person {
+public class Person extends BaseEntity {
+
+   private static final long serialVersionUID = -3697289491245970115L;
 
    private String firstName;
    private String lastName;
