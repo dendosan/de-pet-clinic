@@ -1,7 +1,0 @@
-package com.example.petclinicdata.services;
-
-import com.example.petclinicdata.model.Pet;
-
-public interface PetService extends CrudService<Pet, Long> {
-
-}
