@@ -1,16 +1,17 @@
 package com.example.petclinic.services.map;
 
-import java.util.Set;
-
-import org.springframework.stereotype.Service;
-
 import com.example.petclinic.model.Owner;
 import com.example.petclinic.model.Pet;
 import com.example.petclinic.services.OwnerService;
 import com.example.petclinic.services.PetService;
 import com.example.petclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
+import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
    private final PetTypeService petTypeService;
